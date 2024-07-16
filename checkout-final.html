@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class=".checkout" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link style -->
+    <link rel="stylesheet" href="h-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>SAM pharmacy</title>
+</head>
+
+<body class="checkout">
+
+    <header> 
+        <a href="search-by-drugs.html" class="logo">SAM pharmacy</a>
+        <nav>
+            <a href="search-by-drugs.html">Home</a>
+            <a href="/history">History</a>
+            <a href ="index.html" onclick="logout()">sign out</a>
+        </nav>
+    </header>
+
+    <div class="container-checkout">
+        <div class="checkout-summary">
+            <h2>Order Summary</h2>
+            <p class="subtotal">Subtotal: $<span id="subtotal">0.00</span></p>
+            <p class="tax">Tax (5%): $<span id="tax">0.00</span></p>
+            <p class="total">Total: $<span id="total">0.00</span></p>
+            <button class="checkout-button" Id='checkoutButton'>Checkout</button>
+            <a href="/search-by-drugs.html"><button class="checkout-button">Return to search page</button></a>
+            <button class="checkout-button" Id='clearCartButton'>Clear cart</button>
+        </div>
+        
+        <div class="item-list" id="itemList">
+            <!-- Items will be dynamically added here -->
+        </div>
+    </div>
+
+    
+
+    <script src="checkout.js"></script>
+ 
+</body>
+
+</html>

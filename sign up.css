@@ -1,0 +1,61 @@
+input{
+    width:90%;
+    padding: 0;
+}
+#sign-up-container{
+width: 80%;
+margin-left: 60vw;
+margin-right: 10vw;
+margin-top: 15vh;
+margin-bottom: 50%;
+height: 100%;
+padding-top:3% ;
+padding-bottom: 35%;
+}
+#sign-up-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    margin-bottom: 0%;
+}
+.link{
+    color: #3c72c3;
+}
+.sign-up{ 
+    margin-bottom: 10000px;
+}
+footer{
+    margin-top: 150px;
+}
+#have-account{
+    color: #3c72c3;
+    text-align: center;
+}
+
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+    #sign-up-container {
+      padding: 20px;
+      height: fit-content;
+    }
+    footer{
+        margin-top: 160px;
+    }
+  }
+  
+  /* Media query for smartphones */
+  @media (max-width: 576px) {
+    #sign-up-container {
+      padding: 10px;
+      height: fit-content;
+      width: 100%;
+      margin-left: 10%;
+
+    }
+    footer{
+        margin-top: 200px;
+    }
+
+  }

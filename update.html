@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="h-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+    <link rel="stylesheet" href="all.min.css"> 
+    <link rel="stylesheet" href="form.css">
+    <title>Update</title>
+</head>
+<body>
+    <header>
+        <a class="logo">SAM pharmacy</a>
+        <nav>
+            <!-- <a href="#cart">Cart</a> -->
+            <!-- <a href="#history">History</a> -->
+            <a href="#footer-div">Complains</a>
+            <a  href ="index.html" onclick="logout()">sign out</a>
+
+        </nav>
+    </header>
+    <div id="search-container">
+        <h2>Search Data by Name</h2>
+        <input type="text" id="name_drug" placeholder="Enter name to search">
+        <button id="pharma_search" >Search</button>
+    </div>
+
+    <div class="container">
+        <ul id="history_table" class="responsive-table">
+          <li class="table-header">
+            <div class="hcol col-1">Name</div>
+            <div class="hcol col-2">drug id</div>
+            <div class="hcol col-3">Number of items</div>
+            <div class="hcol col-4">Price</div>
+            <div class="hcol col-5">expiry date</div>
+            <div class="hcol col-6">category</div>
+          </li>
+
+        <button class="delete_all">Delete all  <i><i class="fas fa-trash"></i></button></i></button>
+    </div>
+    
+    <footer>
+        <p>copyrights @ <span>Angry Nerds team</span></p>
+        <div class="footer-div" id ="footer-div">
+            <nav>
+                <a href="tel:(02)01210799067" target="_blank" class="top-text"><i class="fa fa-phone"></i><span>+02 01210799067</span></a>
+                <a href="mailto:aliaa.gado@gmail.com" target="_blank" class="top-text"><i class="fa fa-envelope"></i><span>aliaa.gado@gmail.com</span></a>
+            </nav>            
+            <nav>
+                <a href="https://api.whatsapp.com/send?phone=01210799067" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://ww.linkedin.com" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com"
+                    target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="Up_date.js"></script>
+</body>
+</html>

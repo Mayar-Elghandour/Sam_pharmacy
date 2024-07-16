@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet"href="form.css">
+    <link rel="stylesheet" href="h-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+    <link rel="stylesheet" href="all.min.css"> 
+    
+</head>
+<body>
+    <header>
+        <a class="logo">SAM pharmacy</a>
+        <nav>
+            <a href="#crud">Add</a>
+            <!-- <a href="Update.html">Update</a> -->
+            <a href="/update">Delete</a>
+            <a hre="index.html" onclick="logout()">sign out</a>
+        </nav>
+    </header>
+    <div id="crud">
+        <div id="head">
+            <h1>CRUD Drugs</h1>
+        </div>
+        <div id="adding">
+            <form id="drugForm" method="POST" action='http://127.0.0.1:3000/addDrug' onsubmit="return validateForm()">
+                <label for="drug_id">Drug ID</label>
+                <input class="info" placeholder="Enter ID" type="number" name="drug_id" id="drug_id" required>
+            
+                <label for="drug_name">Name</label>
+                <input class="info" placeholder="Enter name" type="text" name="drug_name" id="drug_name" required>
+            
+                <label for="issue_date">Issue date</label>
+                <input class="info" placeholder="Enter issue date YYYY-MM-DD" type="text" name="issue_date" id="issue_date" required>
+            
+                <label for="expiry_date">Expiry date</label>
+                <input class="info" placeholder="Enter expiry date YYYY-MM-DD" type="text" name="expiry_date" id="expiry_date" required>
+            
+                <label for="active_subs">Effective substance</label>
+                <input class="info" placeholder="Enter effective substance" type="text" name="active_subs" id="active_subs"required>
+            
+                <label for="purpose">Purpose</label>
+                <input class="info" placeholder="Enter purpose" type="text" name="purpose" id="purpose" required>
+            
+                <label for="price">Price</label>
+                <input class="info" placeholder="Enter price" type="number" name="price" id="price" required>
+            
+                <label for="category">Category</label>
+                <input class="info" placeholder="Enter category" type="text" name="category" id="category" required>
+            
+                <label for="dose">Dose</label>
+                <input class="info" placeholder="Enter dose" type="text" name="dose" id="dose" required>
+            
+                <label for="stock">Stock</label>
+                <input class="info" placeholder="Enter stock" type="number" name="stock" id="stock" required>
+            
+                <label for="side_effects">Side effects</label>
+                <input class="info" placeholder="Enter side effects" type="text" name="side_effects" id="side_effects" required>
+            
+                <button id="submitBtn" type="submit">Create</button>
+            </form>
+        </div>
+        <p id="edit">Want to <a href="http://127.0.0.1:3000/update" method="GET" id="link">make changes?!  yess</a></p>
+    </div>    
+        
+    <footer>
+        <p>copyrights @ <span>Angry Nerds team</span></p>
+        <div class="footer-div" id ="footer-div">
+            <nav>
+                <a href="tel:(02)01210799067" target="_blank" class="top-text"><i class="fa fa-phone"></i><span>+02 01210799067</span></a>
+                <a href="mailto:aliaa.gado@gmail.com" target="_blank" class="top-text"><i class="fa fa-envelope"></i><span>aliaa.gado@gmail.com</span></a>
+            </nav>            
+            <nav>
+                <a href="https://api.whatsapp.com/send?phone=01210799067" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://ww.linkedin.com" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com"
+                    target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+<script src="form.js"></script>  
+</body>
+</html>

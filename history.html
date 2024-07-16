@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="htmlHistory"  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="h-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="all.min.css">
+    <title>History</title>
+</head>
+<body class="history" >
+    <header> 
+        <a href="search-by-drugs.html" class="logo" >SAM pharmacy</a>
+        <nav>
+            <a href="search-by-drugs.html">Home</a>
+            <a href="#contacts">Complaints</a>
+            <a href ="index.html" onclick="logout()">sign out</a>
+        </nav>
+    </header>
+    <div class="container">
+        <ul id="history_table" class="responsive-table">
+          <li class="table-header">
+            <div class="hcol col-1"></div>
+            <div class="hcol col-2">Order Id</div>
+            <div class="hcol col-3">Number of items</div>
+            <div class="hcol col-4">Price</div>
+            <div class="hcol col-5">Delivery date</div>
+            <!-- <div class="hcol col-6">delete</div> -->
+          </li>
+
+          <li class="table-row">
+                <button  class="col col-1 expand_arrow btn-nono"><i  class="arrow fa-solid fa-chevron-right nono"></i></button>
+                <div class="col col-2" data-label="Order Id">1</div>
+                <div class="col col-3" data-label="itemsNo">1</div>
+                <div class="col col-4" data-label="price">$150</div>
+                <div class="col col-5" data-label="D-Date">2024-07-10T21:00:00.000Z</div>
+                <!--<button id ="btn-nono" class="col col-6 delete_entry"><i id ="nono" class="fas fa-trash"></i></button>-->
+          </li>
+          <div class="purchase_detail hide">
+            <li class="sub-header">
+                <div class="subcol scol-1" data-label="medicine">Item Name</div>
+                <div class="subcol scol-2" data-label="itemsNo">Quantity</div>
+            </li>
+            <li class="table-row">
+              <button class="col col-1 expand_arrow"><i class="arrow fa-solid fa-chevron-right"></i></button>
+              <div class="col col-2" data-label="Order Id">2</div>
+              <div class="col col-3" data-label="itemsNo">2</div>
+              <div class="col col-4" data-label="price">$25</div>
+              <div class="col col-5" data-label="D-Date">2024-07-11T21:00:00.000Z</div>
+              <button class="col col-6 delete_entry"><i class="fas fa-trash"></i></button>
+            </li>
+            <div class="purchase_detail hide">
+            <li class="sub-header">
+                <div class="subcol scol-1" data-label="medicine">Item Name</div>
+                <div class="subcol scol-2" data-label="itemsNo">Quantity</div>
+            </li>
+            <li class="table-row">
+              <button class="col col-1 expand_arrow"><i class="arrow fa-solid fa-chevron-right"></i></button>
+              <div class="col col-2" data-label="Order Id">3</div>
+              <div class="col col-3" data-label="itemsNo">3</div>
+              <div class="col col-4" data-label="price">$25</div>
+              <div class="col col-5" data-label="D-Date">2024-07-11T21:00:00.000Z</div>
+              <button class="col col-6 delete_entry"><i class="fas fa-trash"></i></button>
+            </li>
+            <div class="purchase_detail hide">
+              <li class="sub-header">
+                <div class="subcol scol-1" data-label="medicine">Item Name</div>
+                <div class="subcol scol-2" data-label="itemsNo">Quantity</div>
+              </li>
+              <li class="table-row">
+            <button class="col col-1 expand_arrow"><i class="arrow fa-solid fa-chevron-right"></i></button>
+            <div class="col col-2" data-label="Order Id">3</div>
+            <div class="col col-3" data-label="itemsNo">3</div>
+            <div class="col col-4" data-label="price">$25</div>
+            <div class="col col-5" data-label="D-Date">2024-07-11T21:00:00.000Z</div>
+            <button class="col col-6 delete_entry"><i class="fas fa-trash"></i></button>
+            </li>
+            <div class="purchase_detail hide">
+            <li class="sub-header">
+                <div class="subcol scol-1" data-label="medicine">Item Name</div>
+                <div class="subcol scol-2" data-label="itemsNo">Quantity</div>
+            </li>
+          <li class="table-row">
+            <button class="col col-1" id="expand_arrow" ><i id="arrow" class="fa-solid fa-chevron-right"></i></button> 
+            <div class="col col-2" data-label="Order Id">42235</div>
+            <div class="col col-3" data-label="itemsNo">John Doe</div>
+            <div class="col col-4" data-label="price">$350</div>
+            <div class="col col-5" data-label="D-Date">Pending</div>
+            <button class="col col-6" id="delete_entry" ><i class="fas fa-trash"></i></button> 
+          </li>
+          <div id="purchase_detail" >
+            <li class="sub-header" >
+              <div class="subcol scol-1" data-label="medicine">Item Name</div>
+              <div class="subcol scol-2" data-label="itemsNo">Quantity</div>
+            </li>
+            <li class="subrow" >
+              <div class="subcol scol-1" data-label="medicine">bialcofan</div>
+              <div class="subcol scol-2" data-label="itemsNo">3 items</div>
+            </li>
+          </div>
+        </ul>
+        <!-- <button class="delete_all">Delete all  <i><i class="fas fa-trash"></i></button></i></button> -->
+    </div>
+    
+  <script  src="history.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link style -->
+    <link rel="stylesheet" href="h-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>SAM pharmacy</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">SAM pharmacy</a>
+        <nav>
+            <a href="/cart">Cart</a>
+            <a href="/history" method="GET">History</a>
+            <a href="#contacts">Complaints</a>
+            <a href="#footer">More</a>
+            <a onclick="logout()">Sign out</a>
+            
+        </nav>
+    </header>
+        
+    <div class="search-container">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Search</button>
+    </div>
+
+    <section class="our-categories" id="categories">
+        <h2 class="title">categories</h2>
+        <div class="divwithscroll">
+            <button id="scroll-left" class="scroll-button">&lt;</button>
+            <div class="sections-content-categories">
+                <div class="card">
+                    <div class="image">
+                        <img class='image-icon' src="">
+                    </div>
+                    <div class="info">
+                        <h3></h3>
+                    </div>
+                </div>
+            </div>
+            <button id="scroll-right" class="scroll-button">&gt;</button>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>copyrights @ <span>Angry Nerds team</span></p>
+        <div class="footer-div">
+            <nav>
+                <a href="tel:(02)01210799067" target="_blank" class="top-text"><i class="fa fa-phone"></i><span>+02 01210799067</span></a>
+                <a href="mailto:aliaa.gado@gmail.com" target="_blank" class="top-text"><i class="fa fa-envelope"></i><span>aliaa.gado@gmail.com</span></a>
+            </nav>            
+            <nav>
+                <a href="https://api.whatsapp.com/send?phone=01210799067" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://ww.linkedin.com" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com"
+                    target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>

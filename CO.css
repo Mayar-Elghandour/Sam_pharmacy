@@ -1,0 +1,22 @@
+.Order-summary{
+  column-gap:20%
+}
+body{
+    background-color: #A1ACBD; 
+}
+.checkout-grid{
+    background-color: white;
+    border-color: black;
+}
+.page-title{
+    color: white;
+}
+.cart-item-details-grid {
+    border: 1px solid black;
+}
+.checkout-grid{
+    border: 1px solid black;
+}
+.payment-summary{
+    border: 1px solid black;
+}
